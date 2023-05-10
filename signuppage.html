@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page</title>
+	<style>
+		body {
+            background-image: url('https://images.wallpaperscraft.com/image/single/books_library_shelves_138556_3840x2160.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: #EAF4EB;
+			font-family: Arial, sans-serif;
+		}
+		
+		.logo {
+			font-weight: bold;
+			font-size: 24px;
+		}
+
+		.navbar {
+			background-color: #2E7166;
+			overflow: hidden;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+		}
+
+		.navbar a {
+			color: #FFFFFF;
+			text-decoration: none;
+			margin: 0 10px;
+			font-size: 18px;
+		}
+
+		.form-container {
+			background-color: #FFFFFF;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.form-container input[type=text], .form-container input[type=email], .form-container input[type=tel] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		.form-container button {
+			background-color: #2E7166;
+			color: #FFFFFF;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+			margin-top: 10px;
+			font-size: 18px;
+		}
+
+		.form-container button:hover {
+			background-color: #1A4731;
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<span class="logo" style="color:#ccc">Smart Library</span>
+		<a href="#">Help</a>
+	</div>
+
+	<div class="form-container">
+		<h2 style="color: #2E7166;">Signup Form</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+			<label for="address">Address:</label>
+			<input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+			<label for="contact">Contact:</label>
+			<input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+			<button type="button" onclick="window.location.href='smart.html'">SignUp</button>
+		</form>
+	</div>
+
+</body>
+</html>
